@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'アプリ概要',
-    Svg: require('@site/static/img/appoverview.svg').default,
+    Svg: require('@site/static/img/appoverview.png').default,
     description: (
       <>
         アプリ概要が入りますアプリ概要が入ります
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'デザイン定義',
-    Svg: require('@site/static/img/design.svg').default,
+    Svg: require('@site/static/img/design.png').default,
     description: (
       <>
         デザイン定義が入りますデザイン定義が入ります
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'チームメンバー',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/team.png').default,
     description: (
       <>
         チームメンバーが入ります。チームメンバーが入ります
@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
