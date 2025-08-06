@@ -25,6 +25,29 @@ const sidebars: SidebarsConfig = {
       items: ['tutorial-basics/create-a-document'],
     },
   ],
+  designSidebar: [
+    {
+      type: 'doc',
+      id: 'design/overview',
+      label: 'デザイン概要',
+    },
+  ],
+
+  membersSidebar: [
+    {
+      type: 'doc',
+      id: 'members/index',
+      label: 'メンバー紹介',
+    },
+  ],
+
+  appSidebar: [
+    {
+      type: 'doc',
+      id: 'app/index',
+      label: 'アプリ概要',
+    },
+  ],
 };
 
 export default sidebars;

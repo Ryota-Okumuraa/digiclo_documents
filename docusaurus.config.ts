@@ -41,9 +41,9 @@ const config: Config = {
       'classic',
       {
         docs: {
+          path: 'docs',
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          routeBasePath: '/',
           editUrl:
             'https://github.com/Ryota-Okumuraa/digiclo_documents/tree/main/',
         },
@@ -70,6 +70,24 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'チュートリアル',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'designSidebar',
+          position: 'left',
+          label: 'デザイン定義',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'membersSidebar',
+          position: 'left',
+          label: 'メンバー',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'appSidebar',
+          position: 'left',
+          label: 'アプリ概要',
         },
         {
           href: 'https://github.com/Ryota-Okumuraa/digiclo_documents',
