@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'アプリ概要',
-    Svg: require('@site/static/img/appoverview.png').default,
+    Svg: require('@site/static/img/appoverview.svg').default,
     description: (
       <>
         アプリ概要が入りますアプリ概要が入ります
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'デザイン定義',
-    Svg: require('@site/static/img/design.png').default,
+    Svg: require('@site/static/img/design.svg').default,
     description: (
       <>
         デザイン定義が入りますデザイン定義が入ります
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'チームメンバー',
-    Svg: require('@site/static/img/team.png').default,
+    Svg: require('@site/static/img/team.svg').default,
     description: (
       <>
         チームメンバーが入ります。チームメンバーが入ります
