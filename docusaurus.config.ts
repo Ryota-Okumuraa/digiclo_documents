@@ -57,7 +57,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/team.svg',
     navbar: {
       title: 'Digital Closet',
       logo: {
@@ -65,12 +65,6 @@ const config: Config = {
         src: 'img/degiclo_logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'チュートリアル',
-        },
         {
           type: 'docSidebar',
           sidebarId: 'designSidebar',
@@ -103,9 +97,17 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'デザイン定義',
+              to: '/docs/app',
             },
+            {
+              label: 'メンバー',
+              to: '/docs/members',
+            },
+            {
+              label: 'デザイン定義',
+              to: '/docs/design'
+            }
           ],
         },
         {
