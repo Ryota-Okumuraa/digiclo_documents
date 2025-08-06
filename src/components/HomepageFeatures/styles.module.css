@@ -3,9 +3,12 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
