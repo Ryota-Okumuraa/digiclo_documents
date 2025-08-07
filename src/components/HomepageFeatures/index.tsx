@@ -1,66 +1,74 @@
 import type { ReactNode } from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-type FeatureItem = {
+type CardItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
-};
-
-const FeatureList: FeatureItem[] = [
-  {
-    title: 'アプリ概要',
-    Svg: require('@site/static/img/appoverview.svg').default,
-    description: (
-      <>
-        アプリ概要が入りますアプリ概要が入ります
-      </>
-    ),
-  },
-  {
-    title: 'デザイン定義',
-    Svg: require('@site/static/img/design.svg').default,
-    description: (
-      <>
-        デザイン定義が入りますデザイン定義が入ります
-      </>
-    ),
-  },
-  {
-    title: 'チームメンバー',
-    Svg: require('@site/static/img/team.svg').default,
-    description: (
-      <>
-        チームメンバーが入ります。チームメンバーが入ります
-      </>
-    ),
-  },
-];
-
-function Feature({ title, Svg, description }: FeatureItem) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" viewBox="0 0 980 489"
-          preserveAspectRatio="xMidYMid meet" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
+  image: string;
+  textlist: string[];
 }
 
-export default function HomepageFeatures(): ReactNode {
+const CardItems: CardItem[] = [
+  {
+    title: 'レイアウト',
+    image: '/img/layout.png',
+    textlist: [
+      '- 全体は3カラム構成をベースに、視線の流れを意識したUI設計',
+      '- ホワイトスペースを活かして、情報の階層を明確に',
+      '- レスポンシブ対応で、スマホでも快適に閲覧可能'
+    ]
+  },
+  {
+    title: 'コンポーネント',
+    image: '/img/components.png',
+    textlist: [
+      '- ボタンやフォームは共通化されており、デザインの一貫性を担保',
+      '- アイテムカード・タグ・フィルターなど再利用性を重視',
+      '- 色やフォントサイズもコンポーネント単位で設計'
+    ]
+  },
+  {
+    title: 'NG行動',
+    image: '/img/ng.png',
+    textlist: [
+      '- 色が統一されていないボタン配置',
+      '- ラベルの無いフォーム入力',
+      '- 必要以上のアニメーションや視認性の低下を招く装飾'
+    ]
+  }
+]
+
+const Card: React.FC<CardItem> = ({ title, image, textlist }) => {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+    <div className={styles.card}>
+      <div className={styles.image}>
+        <img src={useBaseUrl(image)} alt="" />
+      </div>
+      <div className={styles.content}>
+        <h3 className={styles.cardTitle}>{title}</h3>
+        <ul className={styles.cardList}>
+          {textlist.map((item: string, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+
+export default function Overview(): ReactNode {
+  return (
+    <section className={styles.overview}>
+      <div className={styles.inner}>
+        <div className={styles.title}>
+          <h2>OVERVIEW</h2>
+          <span></span>
+        </div>
+        <p className={styles.text}>Digital Closet は、ユーザーが自分のクローゼットを<br />デジタル上で整理できるアプリです。<br />以下の3つの設計ポリシーに基づき、<br />誰でも簡単に使えるよう設計しています</p>
+        <div className={styles.list}>
+          {CardItems.map((props, id) => (
+            <Card key={id} {...props} />
           ))}
         </div>
       </div>

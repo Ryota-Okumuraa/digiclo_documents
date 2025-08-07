@@ -1,0 +1,65 @@
+.firstView {
+    height: 100vh;
+    background-color: #93C1E1;
+    background-image: url(../../../static/img/first-view2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.firstView .sp {
+    position: absolute;
+    transform: rotate(30deg);
+    top: -15vw;
+    right: -12vw;
+    width: 70vw;
+    max-width: 950px;
+}
+
+.inner {
+    margin: 0 auto;
+    max-width: 1360px;
+    width: 100%;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.firstView .textBox {
+    margin-top: 36px;
+}
+
+.firstView h1 {
+    font-size: 84px;
+    font-weight: 900;
+    line-height: 5.5rem;
+    letter-spacing: 1.26rem;
+    color: #F4FBFF;
+}
+
+.firstView .textWrapper {
+    margin-top: 36px;
+}
+
+.firstView .textWrapper p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.3rem;
+    color: #F4FBFF;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wave {
+    width: 100vw;
+    height: auto;
+}

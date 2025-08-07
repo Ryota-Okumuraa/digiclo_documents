@@ -56,14 +56,9 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/team.svg',
     navbar: {
-      title: 'Digital Closet',
-      logo: {
-        alt: 'Digital Closet Logo',
-        src: 'img/degiclo_logo.svg',
-      },
+      title: 'DIGITAL CLOSET',
       items: [
         {
           type: 'docSidebar',
