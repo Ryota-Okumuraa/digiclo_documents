@@ -42,7 +42,7 @@ const config: Config = {
       {
         docs: {
           path: 'docs',
-          sidebarPath: 'false',
+          sidebarPath: false,
           routeBasePath: '/',
           editUrl:
             'https://github.com/Ryota-Okumuraa/digiclo_documents/tree/main/',
