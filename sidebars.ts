@@ -12,7 +12,7 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: false,
       items: [
-        'app/index',
+        'app/app',
       ],
     },
   ],
@@ -27,7 +27,7 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: false,
       items: [
-        'members/index',
+        'members/members',
       ],
     },
   ],
@@ -42,7 +42,7 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: false,
       items: [
-        'design/index',
+        'design/design',
       ],
     },
   ],
