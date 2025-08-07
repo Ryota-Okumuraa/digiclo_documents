@@ -93,15 +93,15 @@ const config: Config = {
           items: [
             {
               label: 'デザイン定義',
-              to: '/docs/app',
+              to: 'app/app',
             },
             {
               label: 'メンバー',
-              to: '/docs/members',
+              to: 'members/members',
             },
             {
               label: 'デザイン定義',
-              to: '/docs/design'
+              to: 'design/design'
             }
           ],
         },
