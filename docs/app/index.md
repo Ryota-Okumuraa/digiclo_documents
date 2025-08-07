@@ -1,5 +1,7 @@
 ---
-sidebar_position: 3
+id: app
+title: アプリ紹介
+sidebar_label: アプリ概要
 ---
 
-# app
+ここに本文

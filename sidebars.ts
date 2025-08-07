@@ -19,7 +19,7 @@ const sidebars: SidebarsConfig = {
   designSidebar: [
     {
       type: 'doc',
-      id: 'design/overview',
+      id: 'design',
       label: 'デザイン概要',
     },
   ],
@@ -27,7 +27,7 @@ const sidebars: SidebarsConfig = {
   membersSidebar: [
     {
       type: 'doc',
-      id: 'members/index',
+      id: 'members',
       label: 'メンバー紹介',
     },
   ],
@@ -35,7 +35,7 @@ const sidebars: SidebarsConfig = {
   appSidebar: [
     {
       type: 'doc',
-      id: 'app/index',
+      id: 'app',
       label: 'アプリ概要',
     },
   ],

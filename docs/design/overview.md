@@ -1,5 +1,7 @@
 ---
-sidebar_position: 3
+id: design
+title: デザイン概要
+sidebar_label: デザイン概要
 ---
 
-# Design
+ここに本文
