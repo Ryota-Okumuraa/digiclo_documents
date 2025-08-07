@@ -43,6 +43,9 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'design/design',
+        'design/color',
+        'design/font-family',
+        'design/font-size',
       ],
     },
   ],

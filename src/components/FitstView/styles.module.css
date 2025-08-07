@@ -1,5 +1,5 @@
 .firstView {
-    height: 100vh;
+    height: 120vh;
     background-color: #93C1E1;
     background-image: url(../../../static/img/first-view2.png);
     background-repeat: no-repeat;
@@ -17,6 +17,7 @@
     right: -12vw;
     width: 70vw;
     max-width: 950px;
+    height: auto;
 }
 
 .inner {
